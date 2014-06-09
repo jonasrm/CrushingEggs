@@ -1,12 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GameEngine.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/EggMove.cs">
     <Files>
-      <File FileName="Assets\Scripts\EggMove.cs" Line="45" Column="19" />
-      <File FileName="Assets\Scripts\GameEngine.cs" Line="103" Column="1" />
-      <File FileName="Assets\Scripts\EggMove.cs" Line="47" Column="66" />
-      <File FileName="Assets\Scripts\EffectRainEggs.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\EggMoveEffect.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GameEngine.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/EggMove.cs" Line="66" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

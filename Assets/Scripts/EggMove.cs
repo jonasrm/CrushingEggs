@@ -6,12 +6,15 @@ public class EggMove : MonoBehaviour {
 	public bool isGold;
 	public AudioClip sound_crash;
 	public AudioClip sound_lose;
+	public GameObject Explosion;
+
 	private int variationSpeed = 0;
 	private int rotatioSpeed = 0;
 	private Vector3 screenPoint;
 	private Vector3 offset;
 	private float randomPosition = 2;
 	private int randomRotation = 20;
+
 
 	// Use this for initialization
 	void Start ()
@@ -50,9 +53,27 @@ public class EggMove : MonoBehaviour {
 				if (isGold)
 					GameEngine.Score += 1;
 
+				startExplosion();
 				Destroy(this.gameObject);
 			}
 		}
+	}
+
+	void startExplosion()
+	{
+		//this.Explosion.transform = this.transform;
+		//Instantiate (this.Explosion, this.transform.position, this.transform.rotation);
+		Instantiate (this.Explosion, 
+		             new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z), 
+		             new Quaternion(-90,0,0,0));
+
+
+		//var dir = (body.transform.position - explosionPosition);
+		/*
+		var dir = (egg.transform.position - egg.transform.position * 1.5f); 
+		float wearoff = 1 - (dir.magnitude / 2);
+		egg.AddForce(dir.normalized * 2 * wearoff);
+		*/
 	}
 	
 }
